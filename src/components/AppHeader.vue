@@ -2,6 +2,7 @@
 export default {
   data() {
     return {
+      linkIndex: 0,
       headerLinks: [
         {
           title: "CHARACTERS",
@@ -58,16 +59,9 @@ export default {
     </div>
     <!--contenitore navbar-->
     <div id="link-header-container">
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
-      <a href="">link</a>
+      <div v-for="link in headerLinks">
+        <a href="#">{{ link.title }}</a>
+      </div>
     </div>
   </div>
 </template>

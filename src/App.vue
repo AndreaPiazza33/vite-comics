@@ -29,7 +29,6 @@ export default {
 }
 .container {
   width: 80%;
-  background-color: aqua;
   margin: auto;
 }
 </style>
