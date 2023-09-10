@@ -1,6 +1,7 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   data() {
@@ -8,7 +9,7 @@ export default {
       title: "",
     };
   },
-  components: { AppHeader, AppMain },
+  components: { AppHeader, AppMain, AppFooter },
 };
 </script>
 
@@ -16,10 +17,16 @@ export default {
   <div class="container">
     <AppHeader></AppHeader>
     <AppMain></AppMain>
+    <AppFooter></AppFooter>
   </div>
 </template>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 80%;
   background-color: aqua;
