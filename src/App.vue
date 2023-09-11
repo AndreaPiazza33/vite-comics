@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <AppHeader></AppHeader>
     <AppMain></AppMain>
     <AppFooter></AppFooter>
@@ -22,10 +22,14 @@ export default {
 </template>
 
 <style>
+/*generiche*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+img {
+  max-width: 100%;
 }
 .container {
   width: 80%;

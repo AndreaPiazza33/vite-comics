@@ -52,29 +52,38 @@ export default {
 
 <template>
   <!--contenitore header-->
-  <div id="header-container">
+  <div class="header-container">
     <!--contenitore logo DC-->
     <div>
-      <img src="../../public/img/dc-logo.png" alt="" />
+      <img src="/img/dc-logo.png" alt="" />
     </div>
     <!--contenitore navbar-->
-    <div id="link-header-container">
+    <div class="link-header-container">
       <div v-for="link in headerLinks">
-        <a href="#">{{ link.title }}</a>
+        <a :href="link.link">{{ link.title }}</a>
       </div>
     </div>
   </div>
 </template>
 <style>
-#header-container {
+.header-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
-#link-header-container {
+.link-header-container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  color: hsl(0, 0%, 44%);
+}
+.link-header-container a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: hsl(208.91deg 98.41% 49.22%);
 }
 </style>
