@@ -65,7 +65,7 @@ export default {
     </div>
   </div>
 </template>
-<style>
+<style lang="scss">
 .header-container {
   display: flex;
   flex-direction: row;
@@ -77,13 +77,13 @@ export default {
   flex-direction: row;
   gap: 1rem;
   color: hsl(0, 0%, 44%);
-}
-.link-header-container a {
-  color: inherit;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  color: hsl(208.91deg 98.41% 49.22%);
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: hsl(208.91deg 98.41% 49.22%);
+    }
+  }
 }
 </style>

@@ -21,7 +21,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style lang="scss">
 /*generiche*/
 * {
   box-sizing: border-box;

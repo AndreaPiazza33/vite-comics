@@ -26,19 +26,19 @@ export default {
       ],
       socialContainer: [
         {
-          socialIcon: "public/img/footer-facebook.png",
+          socialIcon: "/img/footer-facebook.png",
         },
         {
-          socialIcon: "public/img/footer-twitter.png",
+          socialIcon: "/img/footer-twitter.png",
         },
         {
-          socialIcon: "public/img/footer-youtube.png",
+          socialIcon: "/img/footer-youtube.png",
         },
         {
-          socialIcon: "public/img/footer-pinterest.png",
+          socialIcon: "/img/footer-pinterest.png",
         },
         {
-          socialIcon: "public/img/footer-periscope.png",
+          socialIcon: "/img/footer-periscope.png",
         },
       ],
     };
@@ -122,7 +122,7 @@ export default {
     </div>
   </div>
 </template>
-<style>
+<style lang="scss">
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -146,11 +146,12 @@ export default {
   color: white;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  img {
+    height: 50px;
+    width: 50px;
+  }
 }
-.option-box img {
-  height: 50px;
-  width: 50px;
-}
+
 /*parte centrale footer*/
 .list-container {
   width: 100%;
@@ -158,24 +159,26 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   background-image: url("/img/footer-bg.jpg");
+  img {
+    max-height: 400px;
+  }
 }
-.list-container img {
-  max-height: 400px;
-}
+
 .list-box {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  h3 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    color: hsl(0, 0%, 64%);
+    list-style-type: none;
+  }
 }
-.list-box h3 {
-  color: white;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-.list-box ul {
-  color: hsl(0, 0%, 64%);
-  list-style-type: none;
-}
+
 /*parte finale del footer*/
 .bottom-footer-container {
   width: 100%;
@@ -185,21 +188,22 @@ export default {
   align-items: center;
   background-color: hsl(0deg 0% 18.82%);
   padding: 1rem 1rem;
+  button {
+    border: 2px solid hsl(208.91deg 98.41% 49.22%);
+    background-color: hsl(0deg 0% 18.82%);
+    color: white;
+    padding: 0.5rem 0.5rem;
+  }
 }
-.bottom-footer-container button {
-  border: 2px solid hsl(208.91deg 98.41% 49.22%);
-  background-color: hsl(0deg 0% 18.82%);
-  color: white;
-  padding: 0.5rem 0.5rem;
-}
+
 .bottom-icon-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-}
-.bottom-icon-box span {
-  color: hsl(208.91deg 98.41% 49.22%);
-  font-weight: bolder;
+  span {
+    color: hsl(208.91deg 98.41% 49.22%);
+    font-weight: bolder;
+  }
 }
 </style>
