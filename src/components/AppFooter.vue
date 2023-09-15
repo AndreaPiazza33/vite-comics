@@ -122,7 +122,7 @@ export default {
     </div>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -136,16 +136,14 @@ export default {
   justify-content: space-around;
   align-items: center;
   background-color: hsl(208.91deg 98.41% 49.22%);
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding: 0 10rem;
 }
 .option-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
   img {
     height: 50px;
     width: 50px;
