@@ -98,7 +98,9 @@ export default {
   <!--contenuti da inserire-->
   <div class="bg-main">
     <div>
-      <div class="jumbotron"></div>
+      <div class="jumbotron">
+        <h3>CURRENT SERIES</h3>
+      </div>
       <!--cards container-->
       <div class="cards-container">
         <AppCards
@@ -125,6 +127,16 @@ export default {
   height: 400px;
   background-image: url("/img/jumbotron.jpg");
   background-size: cover;
+  position: relative;
+  h3 {
+    width: 12rem;
+    background-color: hsl(208.91deg 98.41% 49.22%);
+    color: white;
+    padding: 1rem 0.5rem;
+    position: absolute;
+    left: 10rem;
+    top: 375px;
+  }
 }
 .cards-container {
   display: flex;
